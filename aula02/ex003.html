@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiro Programa</title>
+    <style>
+        body{
+            background-color:rgb(105, 3, 3); /*Cor do fundo da pagina*/
+            color: white; /*Cor do texto da pagina*/
+            font: normal 18pt Arial; /*Tipo de fonte e seu tamanho*/
+        }
+        h1{
+            color :rgb(0, 245, 53); /*Cor do titulo ou Cabeçalho*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundão gostoso!</h1> <!--Cabeçalho ou Titulo-->
+    <p> Oi seu lindo!</p> <!--Texto normal da pagina-->
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um numero: '));
+        var n2 = Number.parseInt(window.prompt('Digite outro numero: '));
+        var soma = n1 + n2;
+        window.alert('A soma dos valores eh: ' + soma);
+
+        /*
+        Para converter uma variavel de numero para string usar String();
+        Para converter string em numero pode tbm usar apenas Number(), o compilador escolhe qual tipo vai ser o numero;
+        */
+
+        // `corpo de texto ${x}` -- Isso eh uma template string
+    </script>
+</body>
+</html>
