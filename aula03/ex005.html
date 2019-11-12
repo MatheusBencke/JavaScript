@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 5</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora Merda</h1>
+    <script>
+        var n1 = Number(window.prompt("Digite um numero: "));
+        var n2 = Number(window.prompt("Digite mais um numero: "));
+        var soma = n1 + n2;
+        var sub = n1 - n2;
+        var mult = n1 * n2;
+        var div = n1 / n2;
+        var resto = n1 % n2;
+        var quad = n1 ** n2;
+        document.write(`${n1} + ${n2} = <strong>${soma}</strong> </br>`);
+        document.write(`${n1} - ${n2} = <strong>${sub}</strong> </br>`);
+        document.write(`${n1} * ${n2} = <strong>${mult}</strong> </br>`);
+        document.write(`${n1} / ${n2} = <strong>${div}</strong> </br>`);
+        document.write(`${n1} % ${n2} = <strong>${resto}</strong> </br>`);
+        document.write(`${n1} ** ${n2} = <strong>${quad}</strong> </br>`);
+    </script>
+</body>
+</html>
