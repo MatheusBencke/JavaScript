@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: bisque;
+            color: black;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique em mim</div> <!-- O id = "msg" da ao div o id de msg para ser utilizado com o comando getElementById()-->
+
+    <script>
+        //Seleciona um paragrafo, se não colocar [n], o comando pega todos os paragrafos, quando coloca [0] o programa pega o paragrafo especifico
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML + ' clonado')
+        
+        //Seleciona o id e adiciona ele para a variavel d, para poder ser modificado por ela depois
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        //var d1 = window.document.querySelector('div#msg') -- Serve para navegadores mais novo, navegadores mais antigos nao funciona
+        
+
+    </script>
+</body>
+</html>
