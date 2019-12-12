@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TesteCanvas</title>
+    <script>
+    window.onload = function () {
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: false,
+        title:{
+            text: "Primeiro Teste do Canvas.js"
+        },
+        axisY: {
+            title: "Pontos MG2",
+            prefix: "Ate ",
+            suffix: "pts",
+            interval: 50
+            
+        },
+        dataPointMaxWidth: 15,
+        data: [{
+            type: "boxAndWhisker",
+            upperBoxColor: "#FFC28D",
+            lowerBoxColor: "#9ECCB8",
+            color: "black",
+            yValueFormatString: "##.#",
+            dataPoints: [
+                { label: "Jhonatan Nery", y: [7, 14, 21, 28, 25] },
+                { label: "Caio Kuli", y: [-3, 4, 11, 15, 8] }
+            ]
+        }]
+    });
+chart.render();
+}
+</script>
+</head>
+<body>
+    <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
